@@ -209,6 +209,7 @@ resource "helm_release" "langfuse" {
     local.encryption_values,
     local.additional_env_values,
     local.clickhouse_overwrite_values,
+    var.additional_helm_values,
   ])
 
   depends_on = [

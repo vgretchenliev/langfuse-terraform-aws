@@ -217,6 +217,12 @@ variable "redis_multi_az" {
   default     = false
 }
 
+variable "additional_helm_values" {
+  description = "Additional Helm values YAML to merge into the Langfuse deployment"
+  type        = string
+  default     = ""
+}
+
 # Additional environment variables
 variable "additional_env" {
   description = "Additional environment variables to set on Langfuse pods"
